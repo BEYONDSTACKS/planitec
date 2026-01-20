@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-cyan: #5DAECD;
+    --color-accent-green: #ACCC3A;
+    --color-dark-gray: #7C7C7B;
+    --color-light-gray: #F2F2F2;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-dark-gray);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+}
