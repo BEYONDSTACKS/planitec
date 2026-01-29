@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://planitec.ind.br"),
   title: {
     default: "Planitec | Ventilação, Climatização e Proteção Contra Incêndio",
     template: "%s | Planitec"
