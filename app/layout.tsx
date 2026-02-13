@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Planitec | Ventilação, Climatização e Proteção Contra Incêndio",
     template: "%s | Planitec"
   },
-  description: "Especialista em ventilação industrial, exaustão, pressurização de escadas e climatização evaporativa. Soluções completas com mais de 20 anos de mercado.",
+  description: "Especialista em ventilação industrial, exaustão, pressurização de escadas e climatização evaporativa. Soluções completas com mais de 30 anos de mercado.",
   openGraph: {
     title: "Planitec | Engenharia Industrial",
     description: "Sistemas de ventilação, climatização e proteção contra incêndio com fabricação própria e excelência técnica.",

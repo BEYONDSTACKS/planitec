@@ -10,7 +10,7 @@ export function WhatsAppButton() {
                 variant="whatsapp"
                 size="lg"
                 className="rounded-full shadow-lg hover:shadow-xl w-[60px] h-[60px] p-0"
-                onClick={() => window.open("https://wa.me/5511982450402", "_blank")}
+                onClick={() => window.open("https://wa.me/5511950340359", "_blank")}
                 aria-label="Fale conosco no WhatsApp"
             >
                 <MessageCircle className="w-8 h-8" />

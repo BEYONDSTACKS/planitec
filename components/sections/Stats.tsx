@@ -1,6 +1,6 @@
 export function Stats() {
     const stats = [
-        { value: "20+", label: "Anos de mercado" },
+        { value: "30+", label: "Anos de mercado" },
         { value: "500+", label: "Projetos executados" },
         { value: "90%", label: "Economia em climatização" },
         { value: "100%", label: "Conformidade normas ABNT" },

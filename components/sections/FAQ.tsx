@@ -14,7 +14,7 @@ export function FAQ() {
         },
         {
             question: "A Planitec atende em quais regiões?",
-            answer: "Nossa sede é em São Paulo/SP, mas atendemos projetos em diversas regiões. Consulte nossa equipe para verificar a disponibilidade para sua localidade."
+            answer: "Atendemos projetos em todo o território Nacional, com sede em São Paulo/SP. Consulte nossa equipe para alinhar as necessidades da sua localidade."
         },
         {
             question: "Vocês emitem ART e laudos técnicos?",

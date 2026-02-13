@@ -14,6 +14,7 @@ export default function ContactPageClient() {
                 breadcrumbs={[
                     { label: "Contato", href: "/contato" }
                 ]}
+                variant="light"
             />
 
             <section className="py-16 lg:py-24 bg-white">
@@ -35,10 +36,8 @@ export default function ContactPageClient() {
                                         <Phone className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 mb-1">Telefones</h3>
-                                        <p className="text-gray-600">(11) 3467-6941</p>
-                                        <p className="text-gray-600">(11) 2609-4974</p>
-                                        <p className="text-gray-600">(11) 2609-4982</p>
+                                        <h3 className="font-bold text-gray-900 mb-1">E-mail</h3>
+                                        <p className="text-gray-600">contato@planitec.ind.br</p>
                                     </div>
                                 </div>
 
@@ -48,7 +47,9 @@ export default function ContactPageClient() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
-                                        <p className="text-gray-600">(11) 9-8245-0402</p>
+                                        <a href="https://wa.me/5511950340359" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600 transition-colors">
+                                            (11) 95034-0359
+                                        </a>
                                     </div>
                                 </div>
 
@@ -57,9 +58,8 @@ export default function ContactPageClient() {
                                         <Mail className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 mb-1">E-mail</h3>
-                                        <p className="text-gray-600">contato@planitec.ind.br</p>
-                                        <p className="text-gray-600">projetos@planitec.ind.br</p>
+                                        <h3 className="font-bold text-gray-900 mb-1">Escritório</h3>
+                                        <p className="text-gray-600">São Paulo, SP</p>
                                     </div>
                                 </div>
 
@@ -69,7 +69,7 @@ export default function ContactPageClient() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Horário de Atendimento</h3>
-                                        <p className="text-gray-600">Segunda a Sexta, das 8h às 18h</p>
+                                        <p className="text-gray-600 text-sm">SEG: 8h às 18h | SEX: 8h às 17h</p>
                                     </div>
                                 </div>
                             </div>

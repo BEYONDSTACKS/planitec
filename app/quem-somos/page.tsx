@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Quem Somos | Planitec",
-    description: "Conheça a história, missão e valores da Planitec, especialista em soluções industriais há mais de 20 anos.",
+    description: "Conheça a história, missão e valores da Planitec, especialista em soluções industriais há mais de 30 anos.",
 };
 
 export default function AboutUsPage() {
@@ -15,10 +15,11 @@ export default function AboutUsPage() {
         <>
             <PageHero
                 title="Quem Somos"
-                subtitle="Conheça a Planitec e nossa trajetória de mais de 20 anos no mercado."
+                subtitle="Conheça a Planitec e nossa trajetória de mais de 30 anos no mercado."
                 breadcrumbs={[
                     { label: "Quem Somos", href: "/quem-somos" }
                 ]}
+                variant="light"
             />
 
             <History />
@@ -40,7 +41,7 @@ export default function AboutUsPage() {
                             {[
                                 "Projeto técnico com memorial de cálculo",
                                 "Fabricação de dutos, coifas e componentes",
-                                "Instalação por equipe própria",
+                                "Instalação por equipe especializada",
                                 "Comissionamento e testes",
                                 "Manutenção preventiva e corretiva",
                                 "Documentação para aprovação no Corpo de Bombeiros"
@@ -74,10 +75,10 @@ export default function AboutUsPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {[
-                            { title: "Normas ABNT", desc: "NBR 16401, NBR 17240, NBR 9077" },
-                            { title: "Corpo de Bombeiros", desc: "Instruções Técnicas IT-13, IT-17, IT-19" },
+                            { title: "Normas ABNT", desc: "NBR 16401, 14518, 14880, 17037, 17240, 9077" },
+                            { title: "Corpo de Bombeiros", desc: "Instruções Técnicas IT-13, IT-15, IT-19" },
                             { title: "CREA/SP", desc: "Profissionais habilitados com registro ativo" },
-                            { title: "ABRAVA", desc: "Empresa Associada à Associação Brasileira de Refrigeração" }
+                            { title: "ABRAVA", desc: "Associação Brasileira de Refrigeração, Ar Condicionado, Ventilação e Aquecimento" }
                         ].map((cert, index) => (
                             <div key={index} className="group p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:border-cyan/40 transition-all duration-500 hover:-translate-y-1">
                                 <div className="w-14 h-14 bg-cyan/10 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:bg-cyan/20 transition-all duration-500">

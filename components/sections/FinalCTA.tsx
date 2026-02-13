@@ -20,20 +20,20 @@ export function FinalCTA() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Button size="xl" asChild variant="primary" className="w-full sm:w-auto shadow-lg shadow-cyan/20">
-                            <Link href="/contato" className="flex items-center gap-2">
-                                <MessageSquare className="w-6 h-6" /> Solicitar Orçamento
-                            </Link>
+                            <a href="https://wa.me/5511950340359" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <MessageSquare className="w-6 h-6" /> Fale no WhatsApp
+                            </a>
                         </Button>
                         <a
-                            href="tel:+551134676941"
+                            href="tel:+5511950340359"
                             className="group flex items-center gap-3 text-gray-900 text-xl font-bold hover:text-cyan transition-colors px-6 py-4 rounded-xl border border-gray-200 hover:border-cyan/30 hover:bg-cyan-50/30"
                         >
-                            <Phone className="w-6 h-6 text-cyan group-hover:animate-bounce" /> (11) 3467-6941
+                            <Phone className="w-6 h-6 text-cyan group-hover:animate-bounce" /> (11) 95034-0359
                         </a>
                     </div>
 
                     <p className="mt-8 text-gray-400 text-sm font-semibold uppercase tracking-widest">
-                        Atendimento em todo o estado de São Paulo
+                        Atendimento em todo o território Nacional
                     </p>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 
 export function Footer() {
     return (
@@ -19,7 +19,7 @@ export function Footer() {
                             A solução no ar.
                             <br />
                             Excelência em ventilação, climatização e proteção contra incêndios
-                            há mais de 20 anos.
+                            há mais de 30 anos.
                         </p>
                     </div>
 
@@ -66,20 +66,28 @@ export function Footer() {
                             <li className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-cyan shrink-0" />
                                 <div className="flex flex-col">
-                                    <span>(11) 3467-6941</span>
-                                    <span>(11) 2609-4974</span>
+                                    <span>(11) 95034-0359</span>
                                 </div>
                             </li>
                             <li className="flex items-center gap-3">
                                 {/* WhatsApp Icon could be reused here or standard phone */}
-                                <span className="text-green font-bold">WA</span>
-                                <span>(11) 98245-0402</span>
+                                <span className="text-green font-bold text-xs">WA</span>
+                                <a href="https://wa.me/5511950340359" className="hover:text-cyan transition-colors" target="_blank" rel="noopener noreferrer">
+                                    (11) 95034-0359
+                                </a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-cyan shrink-0" />
                                 <a href="mailto:contato@planitec.ind.br" className="hover:text-cyan transition-colors">
                                     contato@planitec.ind.br
                                 </a>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <Clock className="w-5 h-5 text-cyan shrink-0" />
+                                <div className="flex flex-col text-xs">
+                                    <span>SEG: 8-18h</span>
+                                    <span>SEX: 8-17h</span>
+                                </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-cyan shrink-0" />

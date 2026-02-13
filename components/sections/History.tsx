@@ -35,7 +35,7 @@ export function History() {
 
                         <div className="space-y-4 text-lg text-gray-600">
                             <p>
-                                A Planitec atua há mais de 20 anos no mercado de ventilação, climatização e proteção contra incêndio, consolidando-se como referência técnica no setor.
+                                A Planitec atua há mais de 30 anos no mercado de ventilação, climatização e proteção contra incêndio, consolidando-se como referência técnica no setor.
                             </p>
                             <p>
                                 Desde o início, nossa proposta é oferecer soluções completas: do projeto técnico à instalação e manutenção, incluindo fabricação própria de componentes como dutos e coifas.

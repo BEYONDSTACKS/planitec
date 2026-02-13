@@ -4,12 +4,77 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import Image from "next/image";
+import { ImageSlider } from "@/components/ui/ImageSlider";
 import Link from "next/link";
 import { Check } from "lucide-react";
 
 // Data Structure
 const services = [
+    {
+        id: "exaustao",
+        title: "Cozinhas Profissionais",
+        description: "Sistemas robustos para remoção de fumaça, gordura, gases e calor de cozinhas profissionais. Essencial para manter a segurança e salubridade do ambiente.",
+        features: [
+            "Coifas industriais em aço inox",
+            "Exaustores e ventiladores de alta performance",
+            "Redes de dutos em aço galvanizado ou inox",
+            "Filtros e sistemas de tratamento de ar"
+        ],
+        applications: [
+            "Cozinhas industriais e comerciais",
+            "Restaurantes e Redes de fast food",
+            "Hotéis e Hospitais",
+            "Cozinhas experimentais"
+        ],
+        images: [
+            "/solutions/exaustao/exaustao-1.jpg",
+            "/solutions/exaustao/exaustao-2.jpg",
+            "/solutions/exaustao/exaustao-3.jpg",
+            "/solutions/exaustao/exaustao-4.jpg",
+            "/solutions/exaustao/exaustao-5.jpg",
+            "/solutions/cozinha/cozinha-1.jpg",
+            "/solutions/cozinha/cozinha-2.jpg",
+            "/solutions/cozinha/cozinha-3.jpg",
+            "/solutions/cozinha/cozinha-4.jpg",
+            "/solutions/cozinha/cozinha-5.jpg",
+            "/solutions/cozinha/cozinha-6.jpg",
+        ]
+    },
+    {
+        id: "pressurizacao",
+        title: "Pressurização de Escadas",
+        description: "Sistemas de segurança vitais para controle de fumaça e proteção de rotas de fuga. Essencial para conformidade com normas de segurança contra incêndio e proteção da vida.",
+        features: [
+            "Projetos conforme as normas NBR e instruções técnicas do Corpo de bombeiros",
+            "Dimensionamento de ventiladores e tomadas de ar",
+            "Integração com sistema de detecção de incêndio",
+            "Entrega de laudo técnico e ART"
+        ],
+        applications: null,
+        images: [
+            "/solutions/pressurizacao/pressurizacao-1.jpg",
+            "/solutions/pressurizacao/pressurizacao-2.jpg",
+        ],
+        video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        id: "deteccao",
+        title: "Detecção e Alarme",
+        description: "Sistemas inteligentes para identificação rápida de princípios de incêndio, permitindo evacuação segura e combate imediato. Proteção ativa para seu patrimônio e ocupantes.",
+        features: [
+            "Detectores de fumaça e temperatura",
+            "Acionadores manuais e sirenes audiovisuais",
+            "Centrais de alarme endereçáveis ou convencionais",
+            "Integração com sistemas de segurança"
+        ],
+        applications: null,
+        images: [
+            "/solutions/deteccao/deteccao-1.jpg",
+            "/solutions/deteccao/deteccao-2.jpg",
+            "/solutions/deteccao/deteccao-3.jpg",
+            "/solutions/deteccao/deteccao-4.jpg",
+        ]
+    },
     {
         id: "ventilacao",
         title: "Ventilação Mecânica",
@@ -18,7 +83,7 @@ const services = [
             "Projeto técnico com memorial de cálculo",
             "Fabricação de dutos e componentes",
             "Instalação por equipe especializada",
-            "Conformidade com NBR 16401"
+            "Conformidade com as NBR’s vigentes"
         ],
         applications: [
             "Edifícios comerciais e corporativos",
@@ -26,25 +91,10 @@ const services = [
             "Shopping centers",
             "Estacionamentos subterrâneos"
         ],
-        image: "/service-ventilation.png"
-    },
-    {
-        id: "exaustao",
-        title: "Exaustão Industrial",
-        description: "Sistemas robustos para remoção de fumaça, gordura, gases e calor de ambientes industriais e comerciais. Essencial para manter a segurança e salubridade do ambiente de trabalho.",
-        features: [
-            "Coifas industriais (Lavadoras e Condensadoras)",
-            "Exaustores e ventiladores de alta performance",
-            "Redes de dutos em aço galvanizado ou inox",
-            "Filtros e sistemas de tratamento de ar"
-        ],
-        applications: [
-            "Cozinhas industriais e comerciais",
-            "Estacionamentos e garagens",
-            "Fábricas e linhas de produção",
-            "Laboratórios químicos"
-        ],
-        image: "/service-exhaust.png"
+        images: [
+            "/solutions/ventilacao/ventilacao-1.jpg",
+            "/solutions/ventilacao/ventilacao-2.jpg",
+        ]
     },
     {
         id: "climatizacao",
@@ -53,7 +103,7 @@ const services = [
         features: [
             "Economia de energia (até 90%)",
             "Ar 100% renovado e filtrado",
-            "Sem uso de gases refrigerantes nocivos",
+            "Sem uso de gases refrigerantes",
             "Baixo custo de instalação e manutenção"
         ],
         applications: [
@@ -62,33 +112,12 @@ const services = [
             "Academias e centros esportivos",
             "Supermercados e Atacarejos"
         ],
-        image: "/service-cooling.png"
-    },
-    {
-        id: "pressurizacao",
-        title: "Pressurização de Escadas",
-        description: "Sistema de segurança obrigatório para obtenção do AVCB em determinadas edificações. O objetivo é manter as rotas de fuga (escadas de emergência) livres de fumaça em caso de incêndio.",
-        features: [
-            "Projeto conforme IT-13 do Corpo de Bombeiros",
-            "Dimensionamento de ventiladores e tomadas de ar",
-            "Integração com sistema de detecção de incêndio",
-            "Entrega de laudo técnico e ART"
-        ],
-        applications: null, // Specific structure
-        image: "/service-pressurization.png"
-    },
-    {
-        id: "deteccao",
-        title: "Detecção e Alarme de Incêndio",
-        description: "Sistemas inteligentes para identificação rápida de princípios de incêndio, permitindo evacuação segura e combate imediato. Proteção ativa para seu patrimônio e ocupantes.",
-        features: [
-            "Detectores de fumaça e temperatura",
-            "Acionadores manuais e sirenes audiovisuais",
-            "Centrais de alarme endereçáveis ou convencionais",
-            "Automação de portas e sistemas de combate"
-        ],
-        applications: null,
-        image: "/service-fire.png"
+        images: [
+            "/solutions/climatizacao/climatizacao-1.jpg",
+            "/solutions/climatizacao/climatizacao-2.jpg",
+            "/solutions/climatizacao/climatizacao-3.jpg",
+            "/solutions/climatizacao/climatizacao-4.jpg",
+        ]
     }
 ];
 
@@ -101,6 +130,7 @@ export default function SolutionsPageClient() {
                 breadcrumbs={[
                     { label: "Soluções", href: "/solucoes" }
                 ]}
+                variant="light"
             />
 
             {/* Navigation Anchor Bar */}
@@ -180,14 +210,12 @@ export default function SolutionsPageClient() {
                                     </div>
 
                                     <div className={`${!isEven ? 'lg:order-1' : ''}`}>
-                                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl group">
-                                            <Image
-                                                src={service.image}
+                                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl group border border-gray-100 bg-gray-50">
+                                            <ImageSlider
+                                                images={service.images}
                                                 alt={service.title}
-                                                fill
-                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                className="w-full h-full"
                                             />
-                                            <div className="absolute inset-0 bg-linear-to-tr from-cyan-900/20 to-transparent mix-blend-overlay" />
                                         </div>
                                     </div>
                                 </div>

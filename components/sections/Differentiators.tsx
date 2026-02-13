@@ -5,7 +5,7 @@ export function Differentiators() {
     const differentials = [
         {
             icon: Clock,
-            title: "+ de 20 anos",
+            title: "+ de 30 anos",
             description: "Atuação consolidada no mercado de engenharia.",
         },
         {

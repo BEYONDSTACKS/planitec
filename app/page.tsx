@@ -3,12 +3,13 @@ import { Services } from "@/components/sections/Services";
 import { AboutSummary } from "@/components/sections/AboutSummary";
 import { Differentiators } from "@/components/sections/Differentiators";
 import { Stats } from "@/components/sections/Stats";
+import { ClientLogosCarousel } from "@/components/sections/ClientLogosCarousel";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Planitec | Ventilação, Climatização e Proteção Contra Incêndio",
-  description: "Especialista em ventilação industrial, exaustão, pressurização de escadas e climatização evaporativa. Soluções completas com mais de 20 anos de mercado.",
+  description: "Especialista em ventilação industrial, exaustão, pressurização de escadas e climatização evaporativa. Soluções completas com mais de 30 anos de mercado.",
 };
 
 export default function Home() {
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* Seção 5: Números (Estatísticas) */}
       <Stats />
+
+      {/* Seção Nova: Logos de Clientes */}
+      <ClientLogosCarousel />
 
       {/* Seção 6: CTA Final */}
       <FinalCTA />

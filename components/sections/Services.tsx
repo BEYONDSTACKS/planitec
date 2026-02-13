@@ -6,39 +6,39 @@ import Image from "next/image";
 export function Services() {
     const services = [
         {
+            title: "Cozinhas Profissionais",
+            description: "Remoção de fumaça, gordura, gases e calor de cozinhas profissionais.",
+            icon: Factory,
+            image: "/solutions/exaustao/exaustao-1.jpg",
+            href: "/solucoes#exaustao",
+        },
+        {
+            title: "Pressurização de Escadas",
+            description: "Sistema de segurança que mantém rotas de fuga livres de fumaça.",
+            icon: Shield,
+            image: "/solutions/pressurizacao/pressurizacao-1.jpg",
+            href: "/solucoes#pressurizacao",
+        },
+        {
+            title: "Detecção e Alarme",
+            description: "Identificação rápida de princípios de incêndio com tecnologia de ponta.",
+            icon: Bell,
+            image: "/solutions/deteccao/deteccao-1.jpg",
+            href: "/solucoes#deteccao",
+        },
+        {
             title: "Ventilação Mecânica",
             description: "Sistemas de renovação e controle do ar para ambientes comerciais e industriais.",
             icon: Wind,
-            image: "/service-ventilation.png",
+            image: "/solutions/ventilacao/ventilacao-1.jpg",
             href: "/solucoes#ventilacao",
-        },
-        {
-            title: "Exaustão Industrial",
-            description: "Remoção de fumaça, gordura, gases e calor de cozinhas, garagens e fábricas.",
-            icon: Factory,
-            image: "/service-exhaust.png",
-            href: "/solucoes#exaustao",
         },
         {
             title: "Climatização Evaporativa",
             description: "Resfriamento eficiente e sustentável com economia de até 90% de energia.",
             icon: Leaf,
-            image: "/service-cooling.png",
+            image: "/solutions/climatizacao/climatizacao-1.jpg",
             href: "/solucoes#climatizacao",
-        },
-        {
-            title: "Pressurização de Escadas",
-            description: "Sistema obrigatório para AVCB que mantém rotas de fuga livres de fumaça.",
-            icon: Shield,
-            image: "/service-pressurization.png",
-            href: "/solucoes#pressurizacao",
-        },
-        {
-            title: "Detecção e Alarme de Incêndio",
-            description: "Identificação rápida de princípios de incêndio com tecnologia de ponta.",
-            icon: Bell,
-            image: "/service-fire.png",
-            href: "/solucoes#deteccao",
         },
     ];
 
